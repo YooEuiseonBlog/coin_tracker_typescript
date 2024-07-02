@@ -6,11 +6,11 @@ import ApexCharts from "react-apexcharts";
 interface IHistorical {
   time_open: number;
   time_close: number;
-  open: number;
-  high: number;
-  low: number;
-  close: number;
-  volume: number;
+  open: string;
+  high: string;
+  low: string;
+  close: string;
+  volume: string;
   market_cap: number;
 }
 
@@ -33,7 +33,7 @@ function Chart({ coinId }: ChartProps) {
           series={[
             {
               name: "Price",
-              data: data?.map((price) => price.close) ?? [],
+              data: data?.map((price) => Number(price.close)) ?? [],
             },
           ]}
           options={{
