@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import {
   Link,
   Route,
@@ -65,7 +64,7 @@ const Tabs = styled.div`
   gap: 10px;
 `;
 
-const Tab = styled.span<{ isActive: boolean }>`
+const Tab = styled.span<{ selected: boolean }>`
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -74,7 +73,7 @@ const Tab = styled.span<{ isActive: boolean }>`
   padding: 7px 0px;
   border-radius: 10px;
   color: ${(props) =>
-    props.isActive ? props.theme.accentColor : props.theme.textColor};
+    props.selected ? props.theme.accentColor : props.theme.textColor};
   a {
     display: block;
   }
@@ -199,10 +198,10 @@ function Coin2() {
           </Overview>
 
           <Tabs>
-            <Tab isActive={chartMatch !== null}>
+            <Tab selected={chartMatch !== null}>
               <Link to={`/${version}/${coinId}/chart`}>Chart</Link>
             </Tab>
-            <Tab isActive={priceMatch !== null}>
+            <Tab selected={priceMatch !== null}>
               <Link to={`/${version}/${coinId}/price`}>Price</Link>
             </Tab>
           </Tabs>
@@ -212,7 +211,7 @@ function Coin2() {
               <Price />
             </Route>
             <Route path={`/v2/:coinId/chart`}>
-              <Chart />
+              <Chart coinId={coinId} />
             </Route>
           </Switch>
         </>
