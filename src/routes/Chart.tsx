@@ -4,8 +4,8 @@ import { fetchCoinHistory_v2 } from "../api";
 import ApexCharts from "react-apexcharts";
 
 interface IHistorical {
-  time_open: string;
-  time_close: string;
+  time_open: number;
+  time_close: number;
   open: number;
   high: number;
   low: number;
@@ -64,9 +64,9 @@ function Chart({ coinId }: ChartProps) {
               labels: {
                 show: false,
               },
-              type: "category",
+              type: "datetime",
               categories: data?.map((price) =>
-                new Date(Number(price.time_close) * 1000).toUTCString()
+                new Date(price.time_close * 1000).toUTCString()
               ),
             },
             fill: {
