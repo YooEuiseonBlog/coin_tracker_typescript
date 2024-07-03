@@ -22,9 +22,10 @@ function Chart({ coinId }: ChartProps) {
   const { isPending, data } = useQuery<IHistorical[]>({
     queryKey: ["ohlcv", coinId],
     queryFn: () => fetchCoinHistory_v2(coinId),
+    // refetchInterval: 10000,
   });
   return (
-    <div>
+    <div style={{ backgroundColor: "transparent" }}>
       {isPending ? (
         "Loading chart..."
       ) : (
