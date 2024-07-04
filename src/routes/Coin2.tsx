@@ -90,7 +90,7 @@ const NavBackButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
   }
   &:hover {
     background-color: green;

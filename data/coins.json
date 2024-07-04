@@ -1,0 +1,92 @@
+[
+    {
+      "id": "bitcoin",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "rank": 1,
+      "is_new": false,
+      "is_active": true,
+      "type": "coin"
+    },
+    {
+      "id": "ethereum",
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "rank": 2,
+      "is_new": false,
+      "is_active": true,
+      "type": "coin"
+    },
+    {
+      "id": "cardano",
+      "name": "Cardano",
+      "symbol": "ADA",
+      "rank": 3,
+      "is_new": false,
+      "is_active": true,
+      "type": "coin"
+    },
+    {
+      "id": "polkadot",
+      "name": "Polkadot",
+      "symbol": "DOT",
+      "rank": 4,
+      "is_new": false,
+      "is_active": true,
+      "type": "coin"
+    },
+    {
+      "id": "litecoin",
+      "name": "Litecoin",
+      "symbol": "LTC",
+      "rank": 5,
+      "is_new": false,
+      "is_active": true,
+      "type": "coin"
+    },
+    {
+      "id": "ripple",
+      "name": "Ripple",
+      "symbol": "XRP",
+      "rank": 6,
+      "is_new": false,
+      "is_active": true,
+      "type": "coin"
+    },
+    {
+      "id": "chainlink",
+      "name": "Chainlink",
+      "symbol": "LINK",
+      "rank": 7,
+      "is_new": false,
+      "is_active": true,
+      "type": "coin"
+    },
+    {
+      "id": "stellar",
+      "name": "Stellar",
+      "symbol": "XLM",
+      "rank": 8,
+      "is_new": false,
+      "is_active": true,
+      "type": "coin"
+    },
+    {
+      "id": "tether",
+      "name": "Tether",
+      "symbol": "USDT",
+      "rank": 9,
+      "is_new": false,
+      "is_active": true,
+      "type": "token"
+    },
+    {
+      "id": "binancecoin",
+      "name": "Binance Coin",
+      "symbol": "BNB",
+      "rank": 10,
+      "is_new": false,
+      "is_active": true,
+      "type": "coin"
+    }
+  ]
